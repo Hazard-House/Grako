@@ -168,7 +168,7 @@ export default defineConfig(({ mode }) => {
     preview: {
       host: "0.0.0.0",
       port: Number(process.env.WEB_PORT ?? 5173),
-      allowedHosts: [previewHost],
+      allowedHosts: previewHost.split(",").map((h) => h.trim()).filter(Boolean),
       proxy: {
         "/health": { target: api, changeOrigin: true },
         "/api": { target: api, changeOrigin: true },
