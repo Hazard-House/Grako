@@ -170,6 +170,7 @@ export default defineConfig(({ mode }) => {
       port: Number(process.env.WEB_PORT ?? 5173),
       allowedHosts: [previewHost],
       proxy: {
+        "/health": { target: api, changeOrigin: true },
         "/api": { target: api, changeOrigin: true },
         "/rpc": { target: api, changeOrigin: true },
       },
