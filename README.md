@@ -63,7 +63,7 @@ For an agent-assisted install, use [SETUP_PROMPT.md](./SETUP_PROMPT.md).
 
 ## Local development (source checkout)
 
-You need Node.js 22+, pnpm 9, and Docker.
+You need Node.js 22+, pnpm 12, and Docker.
 
 ```bash
 git clone https://github.com/elie222/rakazo.git

@@ -3,3 +3,19 @@ packages:
   - "packages/*"
   - "infra/sandboxes/supervisor"
   - "infra/updater"
+
+allowBuilds:
+  '@google/genai': false
+  '@prisma/engines': false
+  core-js: false
+  cpu-features: false
+  electron-winstaller: false
+  esbuild: false
+  koffi: false
+  prisma: false
+  protobufjs: false
+  ssh2: false
+
+overrides:
+  react: 19.2.3
+  react-dom: 19.2.3
